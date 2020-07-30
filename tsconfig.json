@@ -13,5 +13,8 @@
     {
       "path": "./tsconfig.spec.json"
     }
-]
+  ],
+  "typeRoots": [
+    "node_modules"
+  ]
 }
