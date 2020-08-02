@@ -1,3 +1,15 @@
 .combat-magic {
   padding-top: 30px;
 }
+
+.base-magics {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.effect-magics {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}

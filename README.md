@@ -1,5 +1,9 @@
 # Arcano
 
+A simple RPG Character creator using Angular 9.
+
+[LIVE DEMO](https://dannielhugo.github.io/arcano/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
 ## Development server

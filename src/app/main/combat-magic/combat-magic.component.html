@@ -15,4 +15,27 @@
   <br>
 
   <h3>Magia combativa (escolha três, tendo pelo menos uma base):</h3>
+
+  <label>Base</label>
+
+  <div class="base-magics">
+    <mat-checkbox
+      [(ngModel)]="magic.value"
+      class="magic"
+      *ngFor="let magic of baseMagics"
+    >
+        {{magic.title}}
+    </mat-checkbox>
+  </div>
+
+  <label>Efeitos</label>
+  <div class="effect-magics">
+    <mat-checkbox
+      [(ngModel)]="effect.value"
+      class="magic"
+      *ngFor="let effect of effects"
+    >
+        {{effect.title}}
+    </mat-checkbox>
+  </div>
 </section>

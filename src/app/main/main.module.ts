@@ -6,6 +6,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { AppearanceComponent } from './appearance/appearance.component';
 import { MainComponent } from './main.component';
@@ -21,7 +22,8 @@ import { CombatMagicComponent } from './combat-magic/combat-magic.component';
     MatTabsModule,
     MatCardModule,
     MatRadioModule,
-    MatInputModule
+    MatInputModule,
+    MatCheckboxModule,
   ],
   exports: [
     MainComponent
