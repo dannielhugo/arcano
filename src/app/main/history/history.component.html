@@ -1,0 +1,25 @@
+<section class="history">
+  <p>
+    Quando você chegar aqui, espere que todos também cheguem para que vocês se apresentem juntos.
+  </p>
+
+  <p>
+    Na sua vez descreva seu caçador e diga ao grupo o que eles sabem sobre você.
+  </p>
+
+  <form class="history-form">
+    <mat-form-field class="history-full-width">
+      <mat-label>Escreva sua história</mat-label>
+      <textarea matInput placeholder="Ex. Tudo começou" rows="3"></textarea>
+    </mat-form-field>
+  </form>
+
+  <h3>Histórico</h3>
+  <p>Na sua vez escolha um destes para cada um dos caçadores:</p>
+  <ul>
+    <li *ngFor="let history of histories">
+      {{history}}
+    </li>
+  </ul>
+
+</section>

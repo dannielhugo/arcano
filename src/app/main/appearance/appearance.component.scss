@@ -1,0 +1,17 @@
+.appearance {
+  padding-top: 30px;
+
+  .appearance-radio-group {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+  }
+
+  .appearance-radio-button {
+    margin: 5px;
+  }
+
+  .appearance-label {
+    font-weight: bold;
+  }
+}

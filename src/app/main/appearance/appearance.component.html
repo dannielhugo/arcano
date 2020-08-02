@@ -1,0 +1,31 @@
+<section class="appearance">
+  <label id="appearance-radio-group-label" class="appearance-label">Gênero</label>
+  <mat-radio-group
+    aria-labelledby="appearance-radio-group-label"
+    class="appearance-radio-group"
+    [(ngModel)]="gender">
+    <mat-radio-button class="appearance-radio-button" *ngFor="let gender of genders" [value]="gender">
+      {{gender}}
+    </mat-radio-button>
+  </mat-radio-group>
+
+  <label id="appearance-radio-group-label" class="appearance-label">Olhos</label>
+  <mat-radio-group
+    aria-labelledby="appearance-radio-group-label"
+    class="appearance-radio-group"
+    [(ngModel)]="eye">
+    <mat-radio-button class="appearance-radio-button" *ngFor="let eye of eyes" [value]="eye">
+      {{eye}}
+    </mat-radio-button>
+  </mat-radio-group>
+
+  <label id="appearance-radio-group-label" class="appearance-label">Roupas</label>
+  <mat-radio-group
+    aria-labelledby="appearance-radio-group-label"
+    class="appearance-radio-group"
+    [(ngModel)]="cloth">
+    <mat-radio-button class="appearance-radio-button" *ngFor="let cloth of cloths" [value]="cloth">
+      {{cloth}}
+    </mat-radio-button>
+  </mat-radio-group>
+</section>

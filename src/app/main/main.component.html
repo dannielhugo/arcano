@@ -1,0 +1,28 @@
+<mat-card class="main-card">
+  <mat-card-header>
+    <mat-card-title>Criação do caçador</mat-card-title>
+    <mat-card-subtitle>
+      <p>Para criar seu caçador Arcano, primeiro escolha e escreva um nome abaixo. </p>
+      <p>Então siga as instruções para decidir sua aparência, classificações, magia combativa, movimentos e equipamentos. Finalmente, se apresente e escolha o histórico.</p>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-tab-group dynamicHeight>
+      <mat-tab label="APARÊNCIA">
+        <app-appearance></app-appearance>
+      </mat-tab>
+      <mat-tab label="CLASSIFICAÇÕES">
+        <app-classification></app-classification>
+      </mat-tab>
+      <mat-tab label="APRESENTAÇÕES E HISTÓRICO">
+        <app-history></app-history>
+      </mat-tab>
+      <mat-tab label="MAGIA COMBATIVA">
+        <app-combat-magic></app-combat-magic>
+      </mat-tab>
+      <mat-tab label="MOVIMENTOS"> Content 3 </mat-tab>
+      <mat-tab label="EQUIPAMENTOS"> Content 3 </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>

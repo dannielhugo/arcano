@@ -1,0 +1,11 @@
+<section class="classification">
+  <label id="classification-radio-group-label" class="classification-label">Escolha uma linha</label>
+  <mat-radio-group
+    aria-labelledby="classification-radio-group-label"
+    class="classification-radio-group"
+    [(ngModel)]="classification">
+    <mat-radio-button class="classification-radio-button" *ngFor="let classification of classifications" [value]="classification">
+      {{classification}}
+    </mat-radio-button>
+  </mat-radio-group>
+</section>
