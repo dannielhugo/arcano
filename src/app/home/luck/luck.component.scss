@@ -1,0 +1,20 @@
+.luck-card {
+  .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-weight: bold;
+    }
+
+    span:first-of-type {
+      margin-right: 0.5rem;
+    }
+
+    span:last-of-type {
+      margin-left: 0.5rem;
+    }
+  }
+}

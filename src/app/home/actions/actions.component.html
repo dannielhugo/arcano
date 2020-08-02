@@ -1,11 +1,17 @@
-<mat-card class="example-card">
-  <mat-card-header>
-    <mat-card-title>Eu combato fogo com <strong>fogo mágico</strong></mat-card-title>
-  </mat-card-header>
-  <img mat-card-image src="https://media.dnd.wizards.com/styles/second_hubpage_banner/public/images/head-banner/NEW-TO-DnD_What-is-DnD_Subsection_Hero_140718.jpg" alt="Photo of a Shiba Inu">
+<mat-card class="actions-card">
   <mat-card-content>
-    <p>
-      Domine a magia!
-    </p>
+    <div
+      aria-labelledby="actions-radio-group-label"
+      class="actions-radio-group">
+
+      <div class="actions-group" *ngFor="let attribute of attributes; index as i;">
+        <span class="actions-description">{{descriptions[i]}}</span>
+        <app-action-circle
+          color="blue"
+          [number]="values[i]"
+        ></app-action-circle>
+        <span class="actions-attribute">{{attribute}}</span>
+      </div>
+    </div>
   </mat-card-content>
 </mat-card>

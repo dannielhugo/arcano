@@ -1,0 +1,34 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$default-margin: 0.8rem;
+$primary: mat-palette($mat-blue);
+$color: mat-color($primary);
+
+.damage-card {
+  .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-weight: bold;
+    }
+
+    span:first-of-type {
+      margin-right: 0.5rem;
+    }
+
+    span:last-of-type {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .damage-tooltip {
+    cursor: pointer;
+    color: $color;
+    font-weight: bold;
+  }
+}

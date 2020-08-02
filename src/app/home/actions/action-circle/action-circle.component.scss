@@ -1,0 +1,32 @@
+span {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background: #cccccc;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 3.6em;
+  text-align: center;
+  width: 3.6em;
+
+  &.red {
+    background: red;
+  }
+
+  &.grey {
+    background: #cccccc;
+  }
+
+  &.green {
+    background: #5EA226;
+  }
+
+  &.blue {
+    background: #5178D0;
+  }
+
+  &.pink {
+    background: #EF0BD8;
+  }
+}

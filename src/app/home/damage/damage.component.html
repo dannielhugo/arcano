@@ -1,0 +1,16 @@
+<mat-card class="damage-card">
+  <mat-card-header>
+    <mat-card-title>Dano</mat-card-title>
+    <mat-card-subtitle>Quando você chegar em 4 ou mais, você se tornará <a class="damage-tooltip" #tooltip="matTooltip" matTooltip="Lesões instáveis pioraram com o tempo" matTooltipPosition="above">'Instável'</a></mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="rating">
+      <span>Ileso</span>
+      <app-rating
+        [max]="7"
+      ></app-rating>
+      <span>Morrendo</span>
+    </div>
+  </mat-card-content>
+</mat-card>

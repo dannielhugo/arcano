@@ -1,0 +1,43 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$default-margin: 0.8rem;
+$primary: mat-palette($mat-blue);
+$color: mat-color($primary);
+
+.actions-radio-group {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.actions-radio-button {
+  margin: 5px;
+}
+
+.actions-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  width: 265px;
+}
+
+.actions-description {
+  display: inline-block;
+  max-width: 150px;
+  text-align: center;
+  margin-bottom: $default-margin;
+}
+
+.actions-attribute {
+  margin-top: $default-margin;
+  font-weight: bold;
+  color: $color;
+  font-size: 1.3rem;
+}
