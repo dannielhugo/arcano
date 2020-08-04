@@ -26,7 +26,6 @@
       perda de sentidos e desorientação em geral</li>
   </ul>
 
-
   <br>
 
   <label><strong>Escolha 3 destes:</strong></label>
@@ -36,6 +35,7 @@
       [(ngModel)]="movement.value"
       class="move"
       *ngFor="let movement of movements"
+      [disabled]="isDisabled(movement)"
     >
       <ng-container [ngSwitch]="movement.type">
         <span *ngSwitchCase="'advanced magic training'" class="move-span">

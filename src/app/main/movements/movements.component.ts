@@ -61,4 +61,17 @@ export class MovementsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  get canSelectMore(): boolean {
+    const movements = this.movements.filter(magic => magic.value).length;
+
+    return movements < 3;
+  }
+
+  isDisabled(move: MovementsCheckbox): boolean {
+    if (this.canSelectMore) {
+      return false;
+    }
+
+    return !Boolean(move.value);
+  }
 }
