@@ -23,6 +23,7 @@
       [(ngModel)]="magic.value"
       class="magic"
       *ngFor="let magic of baseMagics"
+      [disabled]="isDisabled(magic)"
     >
         {{magic.title}}
     </mat-checkbox>
@@ -34,6 +35,7 @@
       [(ngModel)]="effect.value"
       class="magic"
       *ngFor="let effect of effects"
+      [disabled]="isDisabled(effect) || hasNoBaseSelected"
     >
         {{effect.title}}
     </mat-checkbox>

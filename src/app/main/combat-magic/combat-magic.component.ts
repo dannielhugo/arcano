@@ -56,7 +56,27 @@ export class CombatMagicComponent implements OnInit {
       title: 'Necromântica: Adicione [drena-vida] para uma base.',
       value: false
     },
-  ]
+  ];
+
+  get canSelectMore(): boolean {
+    const base = this.baseMagics.filter(magic => magic.value).length;
+    const effects = this.effects.filter(magic => magic.value).length;
+
+    return base + effects < 3;
+  }
+
+  get hasNoBaseSelected(): boolean {
+    const base = this.baseMagics.filter(magic => magic.value).length;
+    return base === 0;
+  }
+
+  isDisabled(magic: MagicCheckbox): boolean {
+    if (this.canSelectMore) {
+      return false;
+    }
+
+    return !Boolean(magic.value);
+  }
 
   constructor() { }
 

@@ -3,13 +3,11 @@
 
   <p><strong>Armas de reserva (escolha uma):</strong></p>
 
-  <div class="equips">
-    <mat-checkbox
-      [(ngModel)]="equip.value"
-      class="equip"
-      *ngFor="let equip of equips"
-    >
+  <mat-radio-group
+    aria-labelledby="equips-radio-group-label"
+    class="equips">
+    <mat-radio-button class="equips-radio-button" *ngFor="let equip of equips" [value]="equip.value">
       {{equip.title}}
-    </mat-checkbox>
-  </div>
+    </mat-radio-button>
+  </mat-radio-group>
 </section>

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 interface EquipCheckbox {
   title: string;
-  value: boolean;
+  value: number;
 }
 
 @Component({
@@ -15,15 +15,15 @@ export class EquipmentsComponent implements OnInit {
   equips: EquipCheckbox[] = [
     {
       title: 'Revólver velho [2-dano perto recarga barulhenta]',
-      value: false,
+      value: 1,
     },
     {
       title: 'Faca ritualística [1-dano contato]',
-      value: false,
+      value: 2,
     },
     {
       title: 'Espada herdada [2-dano contato brutal]',
-      value: false,
+      value: 3,
     }
   ]
   constructor() { }
