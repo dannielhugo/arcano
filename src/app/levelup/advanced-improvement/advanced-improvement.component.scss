@@ -1,0 +1,15 @@
+.advanced-improvement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  .advanced-improvement-radio-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advanced-improvement-label {
+    font-weight: bold;
+  }
+}

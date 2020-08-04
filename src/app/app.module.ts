@@ -7,12 +7,13 @@ import { CoreModule } from './core/core.module';
 
 import { HomeModule } from './home/home.module';
 import { MainModule } from './main/main.module';
+import { LevelupModule } from './levelup/levelup.module';
 
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,6 +21,7 @@ import { AppComponent } from './app.component';
     LayoutModule,
     HomeModule,
     MainModule,
+    LevelupModule,
     CoreModule,
   ],
   providers: [],

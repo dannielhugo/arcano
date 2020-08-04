@@ -1,0 +1,11 @@
+<section class="advanced-improvement">
+  <label id="advanced-improvement-radio-group-label" class="advanced-improvement-label">Melhorias Avançadas</label>
+  <mat-radio-group
+    aria-labelledby="advanced-improvement-radio-group-label"
+    class="advanced-improvement-radio-group"
+    [(ngModel)]="selected">
+    <mat-radio-button class="advanced-improvement-radio-button" *ngFor="let improvement of improvements" [value]="improvement">
+      {{improvement}}
+    </mat-radio-button>
+  </mat-radio-group>
+</section>

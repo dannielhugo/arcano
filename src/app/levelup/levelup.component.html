@@ -1,0 +1,34 @@
+<mat-card class="levelup-card">
+  <mat-card-header>
+    <mat-card-title>Experiência</mat-card-title>
+    <mat-card-subtitle>
+      <p>Sempre que sua rolagem for 6 ou menos, ou quando um movimento determinar, marque uma caixa de experiência.</p>
+      <p>Quando você tiver preenchido todas as cinco caixas de experiência, você sobe de nível.</p>
+      <p>A seguir escolha uma melhoria da seguinte lista</p>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="level">
+      <button mat-mini-fab (click)="levelDown()">
+        <mat-icon>exposure_neg_1</mat-icon>
+      </button>
+      <span class="current">
+        <strong>Nível Atual:</strong> {{level}}
+      </span>
+      <button mat-mini-fab (click)="levelUp()">
+        <mat-icon>exposure_plus_1</mat-icon>
+      </button>
+    </div>
+
+    <div class="experience">
+      <label>Experiência:</label>
+      <app-rating
+        [max]="5"
+      ></app-rating>
+    </div>
+
+    <app-improvement></app-improvement>
+    <app-advanced-improvement></app-advanced-improvement>
+  </mat-card-content>
+</mat-card>
