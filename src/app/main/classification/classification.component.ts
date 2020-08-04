@@ -28,7 +28,6 @@ export class ClassificationComponent implements OnInit {
       }
     },
     {
-
       label: 'Braveza +1, Esperteza +1, Estranheza +2, Firmeza −1, Sutileza ±0',
       value: {
         bravery: 1,

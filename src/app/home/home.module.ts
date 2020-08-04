@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatChipsModule } from '@angular/material/chips';
 
 import { SubheaderComponent } from './subheader/subheader.component';
 import { HomeComponent } from './home.component';
@@ -28,6 +29,7 @@ import { DamageComponent } from './damage/damage.component';
     CommonModule,
     MatCardModule,
     MatTooltipModule,
+    MatChipsModule,
     FormsModule,
     CoreModule,
   ],

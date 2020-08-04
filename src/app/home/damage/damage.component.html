@@ -9,8 +9,16 @@
       <span>Ileso</span>
       <app-rating
         [max]="7"
+        (rateChanged)="onRateChanged($event)"
       ></app-rating>
       <span>Morrendo</span>
     </div>
+
+    <mat-chip-list aria-label="Instável" class="unstable" *ngIf="damage > 3">
+      <mat-chip color="warn" selected>
+        Instável
+      </mat-chip>
+    </mat-chip-list>
+
   </mat-card-content>
 </mat-card>
