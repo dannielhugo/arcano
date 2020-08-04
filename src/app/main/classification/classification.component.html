@@ -3,9 +3,10 @@
   <mat-radio-group
     aria-labelledby="classification-radio-group-label"
     class="classification-radio-group"
-    [(ngModel)]="classification">
-    <mat-radio-button class="classification-radio-button" *ngFor="let classification of classifications" [value]="classification">
-      {{classification}}
+    [(ngModel)]="currentValue"
+    (change)="onClassificationChanged()">
+    <mat-radio-button class="classification-radio-button" *ngFor="let classification of classifications" [value]="classification.value">
+      {{classification.label}}
     </mat-radio-button>
   </mat-radio-group>
 </section>

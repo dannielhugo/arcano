@@ -8,9 +8,9 @@
         <span class="actions-description">{{descriptions[i]}}</span>
         <app-action-circle
           color="blue"
-          [number]="values[i]"
+          [number]="values[attribute.value]"
         ></app-action-circle>
-        <span class="actions-attribute">{{attribute}}</span>
+        <span class="actions-attribute">{{attribute.name}}</span>
       </div>
     </div>
   </mat-card-content>
