@@ -1,0 +1,22 @@
+.movements {
+  padding-top: 30px;
+}
+
+.movement-list {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+
+  .move {
+    .move-span {
+      display: inline-block;
+      white-space: normal;
+    }
+  }
+}
+
+:host ::ng-deep .mat-checkbox-inner-container {
+  vertical-align: top;
+  align-self: flex-start;
+  margin: 3px 16px;
+}

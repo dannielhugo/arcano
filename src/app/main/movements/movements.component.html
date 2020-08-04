@@ -1,0 +1,100 @@
+<section class="movements">
+  <p>
+    Você recebe todos os movimentos básicos e quatro movimentos de caçador Arcano.
+  </p>
+  <p>
+    Você recebe este:
+  </p>
+
+  <br>
+
+  <label><strong>Ferramentas e técnicas:</strong></label>
+
+  <p>Para poder usar sua magia combativa efetivamente, você depende de uma série de ferramentas e técnicas. Se você não utilizá-las, haverá algumas complicações.
+    Elimine uma destas; você vai necessitar das outras.</p>
+  <ul>
+    <li><strong>Consumíveis:</strong> Você precisa ter certos suprimentos — pós,
+      óleos, etc. — a mão para lançar seu feitiço. Eles são consumidos quando você lança o feitiço. Se você não os tiver a
+      mão, seu corpo será o substituto: receba [1-dano ignora armadura] quando lançar</li>
+    <li><strong>Focos:</strong> Você precisa de varinhas, cajados e outros implementos chamativos para focar seus esforços de forma mais
+      poderosa. Se você não tiver o que precisa a mão, sua magia combativa causa −1 de dano.</li>
+    <li><strong>Gestos:</strong> Você precisa ser capaz de gesticular com suas mãos de forma chamativa para poder usar sua magia combativa.
+      Se você estiver preso de alguma forma você ainda consegue lançar o feitiço, mas as chances de dar errado são maiores; receba −1 constante em sua magia combativa.</li>
+    <li><strong>Encantamentos:</strong> Você precisa falar em uma linguagem mística para controlar sua magia sem filtrá-la diretamente com sua mente.
+      Se você usar um feitiço de magia combativa, com sucesso ou falha, enquanto não pode ou não quer falar, você deve imediatamente agir sob pressão para evitar
+      embaralhar seus pensamentos — produzindo alucinações,
+      perda de sentidos e desorientação em geral</li>
+  </ul>
+
+
+  <br>
+
+  <label><strong>Escolha 3 destes:</strong></label>
+
+  <div class="movement-list">
+    <mat-checkbox
+      [(ngModel)]="movement.value"
+      class="move"
+      *ngFor="let movement of movements"
+    >
+      <ng-container [ngSwitch]="movement.type">
+        <span *ngSwitchCase="'advanced magic training'" class="move-span">
+          <strong>Treinamento mágico avançado:</strong> Se você tiver duas de suas três Ferramentas e técnicas à disposição, você pode ignorar a terceira.
+        </span>
+
+        <span *ngSwitchCase="'magic reputation'" class="move-span">
+          <strong>Reputação mágica:</strong>
+          Escolha três grandes grupos ou organizações da comunidade sobrenatural, o que pode incluir alguns dos tipos mais sociáveis de monstros.
+          Eles ouviram falar você e respeitam seu poder. Com humanos afetados, receba +1 adiante para manipular alguém. Você pode usar manipular alguém em monstros afetados como se eles fossem humanos,
+          mas sem bônus.
+        </span>
+
+        <span *ngSwitchCase="'enchanted vestiment'" class="move-span">
+          <strong>Vestuário encantado:</strong>
+          Escolha uma peça de vestuário do dia a dia — ela está encantada sem nenhuma alteração na aparência.
+          Receba 1 de dano a menos de qualquer coisa que tentar te acertar através da peça de roupa.
+        </span>
+
+        <span *ngSwitchCase="'could be worse'" class="move-span">
+          <strong>Poderia ser pior:</strong>
+          Quando você falhar em uma rolagem para usar magia você pode usar uma das seguintes opções em vez de perder o controle da magia:
+          <ul>
+            <li>Fiasco: As preparações e materiais para o feitiço foram arruinados. Você terá que começar do zero com o tempo de preparação dobrado.</li>
+            <li>Isso não vai ser bom: O efeito acontece, mas você aciona todos os defeitos listados menos um. Você escolhe qual defeito vai evitar.</li>
+          </ul>
+        </span>
+
+        <span *ngSwitchCase="'forensic divination'" class="move-span">
+          <strong>Adivinhação forense:</strong>
+          Quando você investigar um mistério com sucesso, você pode perguntar “Que magia foi feita aqui?” como uma pergunta extra e gratuita.
+        </span>
+
+        <span *ngSwitchCase="'give everything you got'" class="move-span">
+          <strong>Vá com tudo ou vá pra casa:</strong>
+          Quando você precisar usar magia como um requisito de magia grandiosa, receba +1 constante nestas rolagens de usar magia.
+        </span>
+
+        <span *ngSwitchCase="'not my fault'" class="move-span">
+          <strong>Não é minha culpa:</strong>
+          Receba +1 para agir sob pressão quando estiver lidando com as consequências dos seus próprios feitiços.
+        </span>
+
+        <span *ngSwitchCase="'practitioner'" class="move-span">
+          <strong>Praticante:</strong>
+          Escolha dois efeitos dos disponíveis de usar magia. Receba +1 para usar magia sempre que escolher um destes efeitos.
+        </span>
+
+        <span *ngSwitchCase="'magic shield'" class="move-span">
+          <strong>Escudo mágico:</strong>
+          Escolha dois efeitos dos disponíveis de usar magia. Receba +1 para usar magia sempre que escolher um destes efeitos.
+        </span>
+
+        <span *ngSwitchCase="'third eye'" class="move-span">
+          <strong>Terceiro olho:</strong>
+          Quando você perceber uma enrascada, você pode abrir seu terceiro olho por um momento para perceber informações extras. Receba +1 de reserva em qualquer resultado 7 ou maior, você também consegue enxergar coisas invisíveis.
+          Com uma falha, você ainda pode reservar 1, mas você está exposto aos perigos sobrenaturais. A totalidade da realidade oculta é dura na mente!
+        </span>
+      </ng-container>
+    </mat-checkbox>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<section class="equipments">
+  <p>Você não precisa de muito — além de qualquer foco ou consumível para dar poder à sua magia. No entanto, ainda é bom ter uma reserva</p>
+
+  <p><strong>Armas de reserva (escolha uma):</strong></p>
+
+  <div class="equips">
+    <mat-checkbox
+      [(ngModel)]="equip.value"
+      class="equip"
+      *ngFor="let equip of equips"
+    >
+      {{equip.title}}
+    </mat-checkbox>
+  </div>
+</section>

@@ -13,9 +13,11 @@ import { MainComponent } from './main.component';
 import { ClassificationComponent } from './classification/classification.component';
 import { HistoryComponent } from './history/history.component';
 import { CombatMagicComponent } from './combat-magic/combat-magic.component';
+import { MovementsComponent } from './movements/movements.component';
+import { EquipmentsComponent } from './equipments/equipments.component';
 
 @NgModule({
-  declarations: [MainComponent, AppearanceComponent, ClassificationComponent, HistoryComponent, CombatMagicComponent],
+  declarations: [MainComponent, AppearanceComponent, ClassificationComponent, HistoryComponent, CombatMagicComponent, MovementsComponent, EquipmentsComponent],
   imports: [
     CommonModule,
     FormsModule,
