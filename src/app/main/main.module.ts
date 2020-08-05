@@ -8,6 +8,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSelectModule } from '@angular/material/select';
 
 import { AppearanceComponent } from './appearance/appearance.component';
 import { MainComponent } from './main.component';
@@ -28,6 +29,7 @@ import { EquipmentsComponent } from './equipments/equipments.component';
     MatInputModule,
     MatCheckboxModule,
     MatIconModule,
+    MatSelectModule,
   ],
   exports: [
     MainComponent

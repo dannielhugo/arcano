@@ -9,12 +9,15 @@
       font-weight: bold;
     }
 
-    span:first-of-type {
-      margin-right: 0.5rem;
+    @media all and (min-width: 960px) {
+      .rating__label--first {
+        margin-right: 0.5rem;
+      }
+
+      .rating__label--last {
+        margin-left: 0.5rem;
+      }
     }
 
-    span:last-of-type {
-      margin-left: 0.5rem;
-    }
   }
 }
