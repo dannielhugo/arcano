@@ -4,14 +4,19 @@
   .classification-radio-group {
     display: flex;
     flex-direction: column;
-    margin: 15px 0;
+    margin: 15px 5px;
   }
 
   .classification-radio-button {
     margin: 5px;
+    margin-bottom: 15px;
   }
 
   .classification-label {
     font-weight: bold;
   }
+}
+
+:host ::ng-deep .mat-radio-label {
+  white-space: normal;
 }

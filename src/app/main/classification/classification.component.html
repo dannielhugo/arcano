@@ -5,7 +5,10 @@
     class="classification-radio-group"
     [(ngModel)]="currentValue"
     (change)="onClassificationChanged()">
-    <mat-radio-button class="classification-radio-button" *ngFor="let classification of classifications" [value]="classification.value">
+    <mat-radio-button
+      class="classification-radio-button"
+      *ngFor="let classification of classifications"
+      [value]="classification.value">
       {{classification.label}}
     </mat-radio-button>
   </mat-radio-group>

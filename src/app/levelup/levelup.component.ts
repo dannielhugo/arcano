@@ -26,6 +26,7 @@ export class LevelupComponent implements OnInit {
   levelDown() {
     if (this.level > 1) {
       this.level--;
+      this.checkForAdvancedImprovements();
     }
   }
 

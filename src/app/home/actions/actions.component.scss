@@ -29,6 +29,15 @@ $color: mat-color($primary);
   justify-items: center;
   justify-content: center;
   width: 265px;
+
+  @media all and (max-width: 600px) {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $color;
+    }
+  }
 }
 
 .actions-description {

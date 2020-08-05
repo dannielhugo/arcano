@@ -7,9 +7,18 @@
   .advanced-improvement-radio-group {
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
   }
 
   .advanced-improvement-label {
     font-weight: bold;
   }
+
+  .advanced-improvement-radio-button {
+    margin-bottom: 15px;
+  }
+}
+
+:host ::ng-deep .mat-radio-label {
+  white-space: normal;
 }
