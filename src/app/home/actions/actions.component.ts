@@ -54,9 +54,6 @@ export class ActionsComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.values = this.attributesService.getAttributes();
 
-    console.log(this.values);
-
-
     this.attributesChangedSubscription = this.attributesService.attributeChanged
       .subscribe((attributes: Attributes) => this.values = attributes)
   }
