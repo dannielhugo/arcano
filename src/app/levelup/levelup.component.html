@@ -25,6 +25,8 @@
       <label>Experiência:</label>
       <app-rating
         [max]="5"
+        [(rate)]="exp"
+        (rateChanged)="onRateChanged($event)"
       ></app-rating>
     </div>
 

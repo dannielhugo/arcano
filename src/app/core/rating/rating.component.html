@@ -1,8 +1,9 @@
-<bar-rating
-  [(rate)]="rate"
-  [max]="max"
-  [theme]="'square'"
-  [showText]="false"
-  (rateChange)="onRateChanged()"
->
-</bar-rating>
+<span class="star-rating">
+  <mat-icon
+    aria-hidden="false"
+    *ngFor="let n of range; let $index = index;"
+    class="to-rate"
+    (click)="mark($index)">
+    {{iconNames[n]}}
+  </mat-icon>
+</span>

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RatingComponent } from './rating/rating.component';
-import { BarRatingModule } from 'ngx-bar-rating';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [RatingComponent],
   imports: [
     CommonModule,
-    BarRatingModule,
+    MatIconModule,
   ],
   exports: [
     RatingComponent
