@@ -18,8 +18,6 @@ export class HistoryComponent implements OnInit {
     'Um companheiro de luta. Vocês enfrentaram as maiores ameaças juntos.'
   ]
 
-  name: string = '';
-
   constructor() { }
 
   ngOnInit(): void {
