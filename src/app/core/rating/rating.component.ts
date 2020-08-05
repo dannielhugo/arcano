@@ -9,14 +9,30 @@ const FULL_STAR = 'star';
   styleUrls: ['./rating.component.scss']
 })
 export class RatingComponent implements OnInit {
-  @Input() rate: number;
+
+  @Input()
+  get rate(): number {
+    return this._rate;
+  }
+  set rate(value: number) {
+    this._rate = value;
+
+    setTimeout(() => {
+      this.marked = value - 1;
+
+      this.checkStars(this.marked);
+    }, 0)
+  }
+
 	@Input() max = 5;
-	@Output() rateChanged = new EventEmitter();
+	@Output() changed = new EventEmitter();
 
   range = [];
   marked = -1;
 
   iconNames: string[] = [];
+
+  private _rate = 0;
 
 	constructor() { }
 
@@ -33,8 +49,9 @@ export class RatingComponent implements OnInit {
 
     this.checkStars(this.marked);
 
-    this.rateChanged.next(this.rate);
+    this.changed.next(this.rate);
   }
+
 
   checkStars(marked: number) {
     for (let i = 0; i < this.max; i++) {

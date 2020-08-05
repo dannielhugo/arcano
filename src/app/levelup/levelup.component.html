@@ -5,6 +5,7 @@
       <p>Sempre que sua rolagem for 6 ou menos, ou quando um movimento determinar, marque uma caixa de experiência.</p>
       <p>Quando você tiver preenchido todas as cinco caixas de experiência, você sobe de nível.</p>
       <p>A seguir escolha uma melhoria da seguinte lista</p>
+      <p>A cada cinco níveis, você já pode selecionar uma melhoria avançadas além destas.</p>
     </mat-card-subtitle>
   </mat-card-header>
 
@@ -25,12 +26,12 @@
       <label>Experiência:</label>
       <app-rating
         [max]="5"
-        [(rate)]="exp"
-        (rateChanged)="onRateChanged($event)"
+        [rate]="exp"
+        (changed)="onRateChanged($event)"
       ></app-rating>
     </div>
 
     <app-improvement></app-improvement>
-    <app-advanced-improvement></app-advanced-improvement>
+    <app-advanced-improvement *ngIf="showAdvancedImprovements"></app-advanced-improvement>
   </mat-card-content>
 </mat-card>
