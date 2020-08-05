@@ -2,7 +2,11 @@
 
 A simple RPG Character creator using Angular 9.
 
-[LIVE DEMO](https://dannielhugo.github.io/arcano/)
+[CLICK HERE TO CHECK THE LIVE DEMO](https://dannielhugo.github.io/arcano/)
+
+*This project was created as part of the discipline Front-End Development Standards - PFE201A*
+
+------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
