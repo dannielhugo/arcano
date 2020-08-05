@@ -6,7 +6,10 @@
   <mat-radio-group
     aria-labelledby="equips-radio-group-label"
     class="equips">
-    <mat-radio-button class="equips-radio-button" *ngFor="let equip of equips" [value]="equip.value">
+    <mat-radio-button
+      class="equips-radio-button"
+      *ngFor="let equip of equips"
+      [value]="equip.value">
       {{equip.title}}
     </mat-radio-button>
   </mat-radio-group>

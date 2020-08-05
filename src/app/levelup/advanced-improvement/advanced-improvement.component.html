@@ -4,7 +4,10 @@
     aria-labelledby="advanced-improvement-radio-group-label"
     class="advanced-improvement-radio-group"
     [(ngModel)]="selected">
-    <mat-radio-button class="advanced-improvement-radio-button" *ngFor="let improvement of improvements" [value]="improvement">
+    <mat-radio-button
+      class="advanced-improvement-radio-button"
+      *ngFor="let improvement of improvements"
+      [value]="improvement">
       {{improvement}}
     </mat-radio-button>
   </mat-radio-group>
